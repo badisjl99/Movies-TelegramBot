@@ -207,7 +207,7 @@ pm2.connect((err) => {
             process.exit(1);
         }
 
-        const botProcess = list.find((process) => process.name === 'movie_bot');
+        const botProcess = list.find((process) => process.name === 'telegram_bot');
         if (botProcess) {
             console.log('Bot process is already running with PID:', botProcess.pid);
             pm2.disconnect();
